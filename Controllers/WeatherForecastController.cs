@@ -29,5 +29,12 @@ namespace JBvisioncontrol.Controllers
             })
             .ToArray();
         }
+        [HttpGet("name")]
+        public IActionResult GetName()
+        {
+            return Ok(new { Name = "Josie Baker" });
+        }
+        //step 2
+
     }
 }
